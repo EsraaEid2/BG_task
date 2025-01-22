@@ -6,11 +6,11 @@ body {
     background-color: #f0efed;
 }
 
-section h3{
-    color: #d6af45;
+section h3 {
+    color: #ab9030;
 }
 
-section p{
+section p {
     color: black;
     line-height: 1.8;
     font-size: 16px;
@@ -47,28 +47,66 @@ section img {
     border: 1px solid #ccc;
 }
 
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
 /* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    /* Adjust header for smaller screens */
+@media (min-width: 769px) {
+    /* For larger screens, header layout remains as is */
     header .row {
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    /* Make the search bar full width */
+    /* Adjust the search bar for larger screens */
     header form {
-        width: 100%;
-        margin-bottom: 1rem;
+        width: 50%;
+        margin-bottom: 0;
     }
 
-    /* Center navigation and profile icon */
+    /* Align navigation and profile icon in a row */
     .nav {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .ms-md-3 {
         margin-left: 0 !important;
     }
 }
+
+@media (min-width: 1024px) {
+    /* Larger screens and tablets */
+    header .row {
+        flex-direction: row;
+    }
+
+    /* Adjust logo size for tablet view */
+    .logo-img {
+        width: 130px;
+    }
+
+    /* Profile icon adjustments */
+    .profile-icon {
+        width: 30px;
+        height: auto;
+    }
+    
+    /* Center the navigation items */
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    /* Ensure the toggle button is centered */
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
 /* Header Styles End */
 
 /* Slider Images Styles Start */
@@ -86,7 +124,7 @@ section img {
     bottom: 10px;
     right: 0;
     position: absolute;
-    background-color: #d6af45;
+    background-color: #ab9030;
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -98,17 +136,7 @@ section img {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-    .left-image {
-        width: 100%;
-        height: auto;
-    }
-
-    .right-image {
-        width: 100%;
-        height: auto;
-    }
-
+@media (min-width: 769px) {
     .discount-banner {
         font-size: 1rem;
         padding: 8px 15px;
@@ -120,7 +148,7 @@ section img {
 .social-icon {
     width: 40px;
     height: 40px;
-    background-color: #d6af45;
+    background-color: #ab9030;
     color: white;
     font-size: 16px;
     text-decoration: none;
@@ -134,7 +162,7 @@ section img {
 
 .dollar-text {
     font-size: 24px;
-    color: #d6af45;
+    color: #ab9030;
     font-weight: bold;
 }
 /* Profile Info Styles End */
