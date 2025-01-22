@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>B&G</title>
+</head>
+
+<body>
+    <!-- Header Area Start -->
+    <header class="container-fluid py-2">
+        <div class="row align-items-center">
+            <!-- Logo Area -->
+            <div class="col-6 col-md-3 text-center text-md-start">
+                <img src="assets/img/logo.png" class="img-fluid" alt="B&G logo" style="width: 150px; height: auto;">
+            </div>
+
+            <!-- Search Bar and Navigation in One Div -->
+            <div class="col-12 col-md-9">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <!-- Search Bar -->
+                    <form class="d-flex my-2 my-md-0 w-50">
+                        <input type="text" class="form-control rounded-pill" placeholder="Search for categories...">
+                    </form>
+
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <!-- Navbar Toggle Button -->
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Collapsible Menu -->
+                        <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-dark">The Day</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-dark">Plan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-dark">Inspiration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-dark">Suppliers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-dark">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <img src="assets/img/profile-icon.png" alt="Profile" class="img-fluid"
+                                            style="width: 40px; height: auto;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Images Slider Area Start -->
+    <section class="container py-3">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <!-- Left Image -->
+                        <div class="col-12 col-md-6">
+                            <img src="assets/img/table.jpg" class="d-block left-image img-fluid rounded-3"
+                                alt="Slider Image 1">
+                        </div>
+                        <!-- Right Column Images -->
+                        <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/img/chandelier.jpg" class="img-fluid right-image rounded-3"
+                                        alt="Image 4">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="position-absolute discount-banner">
+                                        25% Store-Wide
+                                    </div>
+                                    <img src="assets/img/image 3.jpg" class="position-relative img-fluid right-image rounded-3"
+                                        alt="Image 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <!-- Left Image -->
+                        <div class="col-12 col-md-6">
+                            <img src="assets/img/image 1.jpg" class="d-block left-image img-fluid rounded-3"
+                                alt="Slider Image 2">
+                        </div>
+                        <!-- Right Column Images -->
+                        <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/img/image2.jpg" class="img-fluid right-image rounded-3"
+                                        alt="Image 6">
+                                </div>
+                            </div>
+                            <div class="row position-relative">
+                                <div class="col">
+                                    <div class="position-absolute discount-banner">
+                                        25% Store-Wide
+                                    </div>
+                                    <img src="assets/img/jeweleries.jpg" class="img-fluid right-image rounded-3"
+                                        alt="Image 7">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Images Slider Area End -->
+
+    <!-- Profile Information Area Start -->
+    <section class="container py-5">
+        <!-- First Div: Profile Information -->
+        <div class="row align-items-center">
+            <!-- Profile Image -->
+            <div class="col-12 col-md-2 text-center">
+                <img src="assets/img/noor l noor.png" class="img-fluid rounded-circle" alt="Profile Picture">
+            </div>
+            <!-- Info Section -->
+            <div class="col-12 col-md-6">
+                <h3 class="mb-2">John Doe</h3>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <!-- Social Media Icons -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="social-icon d-flex align-items-center justify-content-center" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon d-flex align-items-center justify-content-center" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon d-flex align-items-center justify-content-center" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="social-icon d-flex align-items-center justify-content-center" title="Telephone">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Div: Dollar Sign -->
+        <div class="row my-4">
+            <div class="col-4 col-md-2 text-center">
+                <p class="dollar-text">$ $ $</p>
+            </div>
+        </div>
+
+        <!-- Third Div: Long Paragraph -->
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto doloribus voluptatem nisi?
+                    Neque, ratione! Delectus at voluptatum aliquam repudiandae iure ex! Molestiae quos nostrum iusto at
+                    impedit vel omnis.
+                    Suscipit, cum quia sunt error vel reiciendis nesciunt autem facere corrupti. Tenetur cum ex libero
+                    magnam quos enim temporibus, expedita nesciunt earum mollitia iure incidunt. Excepturi illo saepe
+                    est inventore.
+                    Omnis, error cum libero quam eligendi repellendus quia nesciunt animi, voluptates inventore mollitia
+                    est labore. Iste quisquam maxime, deleniti eveniet quis nulla error amet et consectetur commodi
+                    necessitatibus eius exercitationem?
+                    Iure, vel itaque! Itaque, fugiat distinctio repellendus, saepe nemo dolorum ea magnam et vel id
+                    temporibus voluptate? Quas, assumenda. Fugit, sunt vero odio quia nihil dolorem magni praesentium
+                    itaque quis.
+                    Rerum assumenda, ab ducimus error molestias aperiam sequi inventore veniam officiis quaerat
+                    perferendis quam? Repellendus eos magni incidunt corrupti? Dolore facere doloremque architecto nobis
+                    quasi. Vel mollitia aliquid est autem.
+                    Iusto expedita, distinctio mollitia officiis ut optio modi veritatis ab ad quia. Repudiandae,
+                    explicabo soluta. Ratione, iusto optio. Eum quod tenetur modi, excepturi explicabo dolorum veniam
+                    nostrum quasi maxime ullam.
+                    Velit similique, perspiciatis quia asperiores tempore beatae officia nulla ipsam sapiente voluptate,
+                    ducimus ea repellat quis ullam iusto enim amet eum est! Nihil quia quis deserunt et incidunt sunt
+                    quos?
+                    Unde est voluptatibus quibusdam perferendis a voluptate consequuntur natus laudantium delectus!
+                    Excepturi iste perspiciatis voluptatem libero, laudantium nihil ab assumenda facilis accusamus est
+                    dolor aperiam. Sapiente labore veritatis autem aspernatur.
+                    Tempora omnis ad cumque facilis mollitia necessitatibus non explicabo. Cumque distinctio sint sunt
+                    architecto veritatis placeat iure culpa minima provident eum, laborum asperiores suscipit tempora
+                    consectetur dolorem aliquid perspiciatis animi.
+                    Dolores reprehenderit assumenda possimus, a quam et blanditiis! Cumque vitae laborum repudiandae a
+                    quos maxime in cum itaque. Numquam explicabo, et fugiat fugit sint at animi eveniet quas officia
+                    possimus!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Profile Information Area End -->
+
+</body>
+
+</html>

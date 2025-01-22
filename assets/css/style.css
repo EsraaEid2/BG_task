@@ -1,0 +1,140 @@
+/* General reset and body styling */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3rem;
+    background-color: #f0efed;
+}
+
+section h3{
+    color: #d6af45;
+}
+
+section p{
+    color: black;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+section img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Header Styles Start */
+.nav .nav-item .nav-link {
+    color: #abaaa9;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav .nav-item .nav-link:hover {
+    color: #333;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.collapse .nav-link {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.container-fluid form .form-control {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust header for smaller screens */
+    header .row {
+        flex-direction: column;
+    }
+
+    /* Make the search bar full width */
+    header form {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Center navigation and profile icon */
+    .nav {
+        justify-content: center;
+    }
+
+    .ms-md-3 {
+        margin-left: 0 !important;
+    }
+}
+/* Header Styles End */
+
+/* Slider Images Styles Start */
+.left-image {
+    width: 950px;
+    height: 500px;
+}
+
+.right-image {
+    width: 475px;
+    height: 250px;
+}
+
+.discount-banner {
+    bottom: 10px;
+    right: 0;
+    position: absolute;
+    background-color: #d6af45;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .left-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .discount-banner {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+/* Slider Images Styles End */
+
+/* Profile Info Styles Start */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #d6af45;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #b58e36;
+    transform: scale(1.1);
+}
+
+.dollar-text {
+    font-size: 24px;
+    color: #d6af45;
+    font-weight: bold;
+}
+/* Profile Info Styles End */
